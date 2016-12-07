@@ -10,7 +10,7 @@
   <inceptionYear>2012</inceptionYear>
 
   <organization>
-      <name>Codenvy</name>
+      <name>Codenvy, S.A.</name>
       <url>https://codenvy.com/</url>
   </organization>
   
@@ -32,13 +32,15 @@
         <artifactId>license-maven-plugin</artifactId>
         <version>${licenseMavenPluginVersion}</version>
         <configuration>
-            <licenseName>epl_only_v1</licenseName>
+            <licenseName>epl</licenseName>
+            <licenseResolver>${project.baseUri}/src/license</licenseResolver>
             <addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
             <failOnMissingHeader>true</failOnMissingHeader>
             <failOnNotUptodateHeader>true</failOnNotUptodateHeader>
-            <descriptionTemplate>${basedir}/src/license/descriptionTemplate.ftl</descriptionTemplate>
+            <descriptionTemplate>${basedir}/src/license/epl/descriptionTemplate.ftl</descriptionTemplate>
             <excludes>
               <exclude>**/*.ftl</exclude>
+              <exclude>**/*.properties</exclude>
             </excludes>
         </configuration>
         <executions>
