@@ -36,9 +36,10 @@
             <addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
             <failOnMissingHeader>true</failOnMissingHeader>
             <failOnNotUptodateHeader>true</failOnNotUptodateHeader>
-            <roots>
-              <root>src</root>
-          </roots>
+            <descriptionTemplate>${basedir}/src/license/descriptionTemplate.ftl</descriptionTemplate>
+            <excludes>
+              <exclude>**/*.ftl</exclude>
+            </excludes>
         </configuration>
         <executions>
             <execution>
