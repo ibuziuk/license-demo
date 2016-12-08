@@ -32,12 +32,11 @@
         <artifactId>license-maven-plugin</artifactId>
         <version>${licenseMavenPluginVersion}</version>
         <configuration>
-            <licenseName>epl</licenseName>
-            <licenseResolver>${project.baseUri}/src/license</licenseResolver>
+            <licenseName>epl_only_v1</licenseName>
             <addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
             <failOnMissingHeader>true</failOnMissingHeader>
             <failOnNotUptodateHeader>true</failOnNotUptodateHeader>
-            <descriptionTemplate>${basedir}/src/license/epl/descriptionTemplate.ftl</descriptionTemplate>
+            <descriptionTemplate>${basedir}/src/license/descriptionTemplate.ftl</descriptionTemplate>
             <excludes>
               <exclude>**/*.ftl</exclude>
               <exclude>**/*.properties</exclude>
